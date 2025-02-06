@@ -48,13 +48,14 @@ function Card(){
         <>
         {products.map((e)=>{
             return (
-                <>
-                <div style={{border:'2px solid blue' }}>
+            
+                <div style={{border:'2px solid blue' }} key={e.id}>
                     <b>{e.id}</b>
                     <img src={e.image} style={{width:"200px" ,height:"300px"}} alt="" />
                     <p style={{width:"200px",overflow:"hidden",height:"200px",overflowY:"auto"}}>{e.description}</p>
                 </div>
-                </>
+               
+                
             )
         })}
         </>
